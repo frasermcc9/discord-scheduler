@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const schedule = require('node-schedule')
-const { MessageEmbed } = require('discord.js')
+const Discord = require('discord.js')
 
 module.exports = class ScheduleCommand extends Command {
     constructor(client) {
@@ -32,7 +32,7 @@ module.exports = class ScheduleCommand extends Command {
         d = d.map(Number)
         let date = new Date(d[0], d[1] - 1, d[2], d[3], d[4], d[5])
 
-        let confirmMessage = new MessageEmbed()
+        let confirmMessage = new Discord.MessageEmbed()
             .setTitle("New Scheduled Direct Message")
             .setDescription(`Sending at: ${date}`)
             .addField(bold('Content'), `${dmContent}`)
