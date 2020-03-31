@@ -1,0 +1,16 @@
+{
+  "name": "zoomer-bot",
+  "version": "1.0.0",
+  "description": "A bot designed to send zoom links via direct message to people in a discord server",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fraser mccallum",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.6.3",
+    "discord.js-commando": "^0.10.0",
+    "node-schedule": "^1.3.2"
+  }
+}
