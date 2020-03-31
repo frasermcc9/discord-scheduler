@@ -1,12 +1,14 @@
 const Discord = require('discord.js');
 const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
+const auth = require('./auth.json');
+
 const client = new CommandoClient({
-    commandPrefix: '$',
+    commandPrefix: auth.prefix,
     owner: '202917897176219648'
 });
 
-const auth = require('./auth.json');
+
 
 client.registry
     .registerDefaultTypes()
